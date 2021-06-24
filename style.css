@@ -1,0 +1,84 @@
+.play {
+    background-color: white;
+    border: none;
+} 
+.card {
+    margin-top: 15px;
+}
+.card-text {
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+  .checkbox {
+    display: none;
+  }
+  
+  .checkbox + label {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 45px;
+    background: #4FBE79;
+    background-size: 80px;
+    border-radius: 70px;
+    padding: 0px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2) inset;
+  }
+  .checkbox + label:before {
+    content: "Play";
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    padding-top: 15px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    transition: left 500ms ease, color 500ms ease, -webkit-transform 150ms ease;
+    transition: left 500ms ease, color 500ms ease, transform 150ms ease;
+    transition: left 500ms ease, color 500ms ease, transform 150ms ease, -webkit-transform 150ms ease;
+  }
+  .checkbox + label:active:before {
+            transform: scale(0.95);
+  }
+  
+  .checkbox:checked + label {
+    background-position-x: -350px;
+    background: gray;
+  }
+  .checkbox:checked + label:before {
+    content: "Train";
+    align-items: center;
+    text-align: center;
+    color: black;
+    left: 40px;
+  }
+  .start {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: 1038px;
+    top: 782px;
+    background: #00BF9A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .image-hide {
+    opacity: 0;
+    transition: .3s;
+  }
+  
